@@ -175,7 +175,7 @@ export default function AdminProduitsPage() {
                       <Upload size={14} /> Choisir un fichier
                     </button>
                     <input
-                      ref={(el) => (fileInputs.current[p.id] = el)}
+                      ref={(el) => { fileInputs.current[p.id] = el; }}
                       type="file"
                       accept="image/*"
                       className="hidden"
